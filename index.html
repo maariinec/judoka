@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/data.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <body>
+  <!-- nav bar for boostrap-->	
+  <header class="row align-items-center bg-dark text-white">
+    <div class="col-12">
+       <h1 class="text-center">Formulaire Judo</h1>
+    </div>
+  </header>
+
+<section class="container col-md-offset-6 col-md-4">
+  <form onsubmit="getUserData()" class="was-validated ml-5 mt-5"> <!-- created form -->
+
+	  	<legend class="text-primary">Veuillez remplir ce formulaire:</legend>
+	  	<!-- legend -->
+
+	  	  <div class="form-group row">
+	  	  	<div class="col-md-8 mb-4 col-form-label">
+			  <label for="validationServer05">Quel est votre nom ?</label><br>
+			  <input type="text" id="validationServer05" class="form-control is-invalid col-form-label" placeholder="name" value="Mark" required>
+		  	</div><!-- created space text -->
+
+		  	<div class="col-md-8 mb-4 col-form-label">
+			  <label>Quel est votre genre?</label><br>
+			  <input type= "radio" name="gender" value="homme" id="H"> Homme
+			  <input type="radio" name="gender" value="femme" id="F"> Femme
+		 	</div><!-- created button -->
+		  </div>
+
+		  <div class="row form-group">
+		  	<div class="col-md-8 mb-3 col-form-label">
+			  <label class="validationServer06">Quel âge avez-vous?</label><br>
+			  <input type="number" name="age" value="0" min="0"  id="validationServer06" class="form-control is-invalid col-form-label" placeholder="age" value="age" required>
+		  	</div><!-- created space number -->
+		  
+
+		    <div class="col-md-8 mb-3 col-form-label">
+			  <label class="validationServer07">Combien pesez-vous (en Kilogramme) ? </label><br>
+			  <input type="number" name="weight" value="0" min="0" id="validationServer07" class="form-control is-invalid col-form-label" placeholder="poids" value="weight" required>
+		    </div><!-- created space number -->
+		  </div>
+		  	<div class="col-md-12 col-form-label">
+		  		<input type="button" value="OK" onclick="getUserData()" class="btn btn-dark ml-5 mt-3">
+		  	</div>
+  </form>
+</section>
+</body>
+ <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </html>
